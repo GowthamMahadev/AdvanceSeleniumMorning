@@ -6,6 +6,8 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -36,7 +38,7 @@ public class createCampaignStatus {
 		
 		//From WebDriverUtility
 		WebDriverUtility Wutil=new WebDriverUtility();
-		WebDriver driver=new FirefoxDriver();
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		Wutil.waitForPageToLoad(driver);
 		
